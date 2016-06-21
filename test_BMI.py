@@ -1,7 +1,6 @@
 # Test BMI function
 
 from bmi import *
-from bmi.py import *
 
 def test_BMI():
     height_feet = 5
