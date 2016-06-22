@@ -2,13 +2,13 @@ from retirement import *
 
 
 def test_savings_goal1():
-	age = 48
-	annual_sal = 98000
-	percentage = 10
-	goal = 1000000
+    age = 48
+    annual_sal = 98000
+    percentage = 10
+    goal = 1000000
 
-	assert calucate_years_to_goal(age, annual_sal, percentage, goal) == 99
-	
+    assert calucate_years_to_goal(age, annual_sal, percentage, goal) == 99
+    
 
 def test_savings_goal2():
     age = 46
