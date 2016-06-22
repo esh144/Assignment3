@@ -1,5 +1,5 @@
 #Test the Distance Formula application
-from distanceformula1 import *
+from distanceformula import *
 
 def test_1():
     x1 = 5
