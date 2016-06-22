@@ -21,3 +21,25 @@ def test_3():
     x2 = 4
     y2 = 15
     assert DistanceFormula(x1, y1, x2, y2) == "Invalid Input"
+
+def test_4():
+    x1 = -8
+    y1 = -9
+    x2 = -5
+    y2 = -7
+    assert DistanceFormula(x1, y1, x2, y2) == math.sqrt(13)
+
+def test_5():
+    x1 = 56
+    y1 = 67
+    x2 = 878
+    y2 = 453
+    assert DistanceFormula(x1, y1, x2, y2) != 8
+
+def test_6():
+    x1 = 56
+    y1 = 67
+    x2 = 878
+    y2 = 453
+    assert DistanceFormula(x1, y1, x2, y2) == math.sqrt(824680)
+
