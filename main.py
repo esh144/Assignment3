@@ -4,6 +4,7 @@
 from bmi import *
 
 #Include Retirement function file
+from retire import *
 
 #Include Distance formula file
 
@@ -26,6 +27,16 @@ while function_choice != 0:
 
 
 
+    print("")
+    function_choice = int(input("Enter another function choice: "))
+    
+    elif function_choice == 2:
+        age = int(input("Enter your current age: "))
+        annual_sal = int(input("Enter your annual salary: "))
+        percentage = int(input("Enter the percent you wish to save from your annual salary (integer only):"))
+        goal = int(input("What is your desired goal for your retirement savings?"))
+        result = calucate_years_to_goal (age, annual_sal, percentage, goal)
+        
     print("")
     function_choice = int(input("Enter another function choice: "))
 
