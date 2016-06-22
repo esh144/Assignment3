@@ -4,7 +4,7 @@ def test_savings_goal1(x):
 	percentage = 10
 	goal = 1000000
 
-	assert(age, annual_sal, percentage, goal) = 51
+	assert calucate_years_to_goal(age, annual_sal, percentage, goal) = 51
 	
 def test_savings_goal2(x):
 	age = 46
@@ -12,5 +12,5 @@ def test_savings_goal2(x):
 	percentage = 10
 	goal = 1000000
 
-	assert(age, annual_sal, percentage, goal) = 44
+	assert calucate_years_to_goal(age, annual_sal, percentage, goal) = 44
 
