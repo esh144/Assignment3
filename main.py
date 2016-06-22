@@ -30,6 +30,7 @@ while function_choice != 0:
         percentage = int(input("Enter the percent you wish to save from your annual salary (integer only):"))
         goal = int(input("What is your desired goal for your retirement savings?"))
         result = calucate_years_to_goal (age, annual_sal, percentage, goal)
+        print(result)
         
     print("")
     function_choice = int(input("Enter another function choice: "))
