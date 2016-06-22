@@ -11,16 +11,18 @@ from distanceformula import *
 
 loop = True
 
-print("Function Menu")
-print("-------------")
-print("1.) Body Mass Index")
-print("2.) Retirement")
-print("3.) Distance Formula")
-print("0.) Quit")
-print('')
+def print_menu():
+    print("Function Menu")
+    print("-------------")
+    print("1.) Body Mass Index")
+    print("2.) Retirement")
+    print("3.) Distance Formula")
+    print("0.) Quit")
+    print('')
 
 while loop == True:
     try:
+        print_menu()
         function_choice = int(input("Enter valid Function choice: "))
     except:
         print("Enter valid choice")
