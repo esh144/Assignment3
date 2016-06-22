@@ -23,12 +23,6 @@ while function_choice != 0:
         weight = int(input("Enter weight in pounds: "))
         result = BMI(feet, inches, weight)
         print("BMI Result: You are ", result)
-                 
-
-
-
-    print("")
-    function_choice = int(input("Enter another function choice: "))
     
     elif function_choice == 2:
         age = int(input("Enter your current age: "))
