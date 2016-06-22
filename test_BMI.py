@@ -9,3 +9,10 @@ def test_BMI():
 
     assert BMI(height_feet, height_inches, weight_lbs) == "Normalweight"
 
+def test_BMI():
+    height_feet = "invalid"
+    height_inches = "invalid"
+    weight_lbs = "invalid"
+
+    assert BMI(height_feet, height_inches, weight_lbs) == "invalid"
+
