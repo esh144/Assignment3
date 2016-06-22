@@ -7,8 +7,9 @@ def calucate_years_to_goal (age, annual_sal, percentage, goal):
 	age_to_goal = math.floor(age_to_goal)
 	
 	if age_to_goal >= 100:
-		print("You will be", age_to_goal, "years old")
-		return "Goal will not be reached in a lifetime"
+		print("Goal will not be reached in a lifetime")
+		print("Your age when goal is reached:")
+		return age_to_goal
 	else:
 		print ("Your age when goal is reached:")
 		return  age_to_goal
