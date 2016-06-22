@@ -29,12 +29,16 @@ while loop == True:
             print("")
             print("Body Mass Index")
             print("---------------")
-            feet = int(input("Enter height in feet (as a integer): "))
-            inches = int(input("Enter remaining height in inches (as an integer): "))
-            weight = int(input("Enter weight in pounds: "))
+            feet = input("Enter height in feet (as a integer): ")
+            inches = input("Enter remaining height in inches (as an integer): ")
+            weight = input("Enter weight in pounds: ")
             result = BMI(feet, inches, weight)
-            print("BMI Result: You are ", result)
-            print("")
+            if result == "invalid":
+                print("Invalid - Please enter valid input")
+                print("")
+            else:
+                print("BMI Result: You are ", result)
+                print("")
         
         elif function_choice == 2:
             age = int(input("Enter your current age: "))
