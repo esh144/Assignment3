@@ -7,7 +7,7 @@ from bmi import *
 from retire import *
 
 #Include Distance formula file
-
+from distanceformula import *
 
 loop = True
 
@@ -47,6 +47,16 @@ while loop == True:
             goal = int(input("What is your desired goal for your retirement savings?"))
             result = calucate_years_to_goal (age, annual_sal, percentage, goal)
             print(result)
+            
+        elif function_choice == 3:
+        x1 = input("Enter the x value of the first value pair: ")
+        y1 = input("Enter the y value of the first value pair: ")
+        x2 = input("Enter the x value of the second value pair: ")
+        y2 = input("Enter the y value of the second value pair: ")
+        result = DistanceFormula(x1, y1, x2, y2)
+        if (result != "Invalid Input"):
+            result = "{0:.2f}".format(result)
+            print("The distance between the two points is ", result)
 
         elif function_choice == 0:
             print("Program ended.")
